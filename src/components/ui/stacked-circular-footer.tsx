@@ -21,7 +21,7 @@ function StackedCircularFooter() {
     }
 
     // Redirect to Gmail compose with pre-filled email
-    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimghani030@gmail.com&su=Subscription Request&body=Hello, I would like to subscribe to updates using this email: ${email}`;
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimghani030@gmail.com&su=Subscription Request&body=Hello, I would like to contact with you using this email: ${email}`;
     window.open(mailtoLink, "_blank");
   };
 
@@ -35,10 +35,18 @@ function StackedCircularFooter() {
             </h2>
           </div>
           <nav className="mb-8 flex flex-wrap justify-center gap-6">
-            <Link href="#" className="hover:text-primary">Home</Link>
-            <Link href="#" className="hover:text-primary">About</Link>
-            <Link href="#" className="hover:text-primary">Projects</Link>
-            <Link href="#" className="hover:text-primary">Contact</Link>
+            <Link href="#" className="hover:text-primary">
+              Home
+            </Link>
+            <Link href="#" className="hover:text-primary">
+              About
+            </Link>
+            <Link href="#" className="hover:text-primary">
+              Projects
+            </Link>
+            <Link href="#" className="hover:text-primary">
+              Contact
+            </Link>
           </nav>
           <div className="mb-8 flex space-x-4">
             <Button variant="outline" size="icon" className="rounded-full">
@@ -54,7 +62,9 @@ function StackedCircularFooter() {
           <div className="mb-8 w-full max-w-md">
             <form className="flex space-x-2" onSubmit={handleSubmit}>
               <div className="flex-grow">
-                <Label htmlFor="email" className="sr-only">Email</Label>
+                <Label htmlFor="email" className="sr-only">
+                  Email
+                </Label>
                 <Input
                   id="email"
                   placeholder="Enter your email"
@@ -64,12 +74,16 @@ function StackedCircularFooter() {
                   className="rounded-full"
                 />
               </div>
-              <Button type="submit" className="rounded-full">Subscribe</Button>
+              <Button type="submit" className="rounded-full">
+                Contact
+              </Button>
             </form>
             {message && <p className="text-center text-sm mt-2">{message}</p>}
           </div>
           <div className="text-center">
-            <p className="text-sm text-muted-foreground">© 2025 All rights reserved.</p>
+            <p className="text-sm text-muted-foreground">
+              © 2025 All rights reserved.
+            </p>
           </div>
         </div>
       </div>
