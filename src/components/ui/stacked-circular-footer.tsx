@@ -11,7 +11,7 @@ function StackedCircularFooter() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setMessage("");
 
@@ -20,23 +20,9 @@ function StackedCircularFooter() {
       return;
     }
 
-    try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await res.json();
-      if (res.ok) {
-        setMessage("Subscription successful! 🎉");
-        setEmail("");
-      } else {
-        setMessage(data.error || "Something went wrong.");
-      }
-    } catch (error) {
-      setMessage("Failed to send request. Try again later.");
-    }
+    // Redirect to Gmail compose with pre-filled email
+    const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimghani030@gmail.com&su=Subscription Request&body=Hello, I would like to subscribe to updates using this email: ${email}`;
+    window.open(mailtoLink, "_blank");
   };
 
   return (
