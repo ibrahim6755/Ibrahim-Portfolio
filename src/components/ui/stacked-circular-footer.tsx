@@ -35,16 +35,21 @@ function StackedCircularFooter() {
             </h2>
           </div>
           <nav className="mb-8 flex flex-wrap justify-center gap-6">
-            <Link href="#" className="hover:text-primary">
+            <Link href="/" className="hover:text-primary">
               Home
             </Link>
-            <Link href="#" className="hover:text-primary">
+            <Link href="#about" className="hover:text-primary">
               About
             </Link>
-            <Link href="#" className="hover:text-primary">
+            <Link href="#projects" className="hover:text-primary">
               Projects
             </Link>
-            <Link href="#" className="hover:text-primary">
+            <Link
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ibrahimghani030@gmail.com&su=Contact Request&body=Hello, I would like to get in touch."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary"
+            >
               Contact
             </Link>
           </nav>

@@ -65,12 +65,12 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 projects flex flex-col items-center justify-around" aria-label="Projects Section">
+      <section id="projects" className="py-16 projects flex flex-col items-center justify-around" aria-label="Projects Section">
         <ProjectSection />
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 projects flex flex-col items-center justify-around" aria-label="Testimonials Section">
+      <section className="py-16 projects flex flex-col items-center justify-around" aria-label="Testimonials Section">
         <TestimonialSection />
       </section>
 

@@ -5,7 +5,7 @@ import { TestimonialCard } from "./TestimonialCard";
 
 function TestimonialSection() {
   return (
-    <section className=" text-center p-7" aria-label="Testimonials Section">
+    <section className=" text-center px-7" aria-label="Testimonials Section">
       {/* Heading Section */}
       <div className="mb-10">
         <h2 className="tracking-tighter text-4xl sm:text-5xl md:text-6xl font-extrabold">
