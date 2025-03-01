@@ -27,7 +27,7 @@ export default function Home() {
         {/* Left Side */}
         <div className="left w-full md:w-2/4 text-center md:text-left">
           <h1 className="tracking-tighter text-4xl md:text-6xl font-extrabold">
-            I'm a Web Developer
+          {`I'm a Web Developer`}
           </h1>
           <h1 className="tracking-tighter text-4xl md:text-6xl font-extrabold mt-[2px] md:mt-[-1px]">
             that{" "}
